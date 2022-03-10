@@ -1,11 +1,11 @@
 from flask import Flask
 
-
-app = Flask(__name__)
+app = Flask(__main__)
 
 @app.route("/")
-def main():
+def index():
 	return "Hello"
 
 
-
+if __name__ == "__main__":
+	app.run()
